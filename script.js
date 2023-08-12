@@ -8,19 +8,26 @@ let arr = [
 // Please don't change anything in the index.html file.
 
 function PrintDeveloper() {
-  //Write your code here , just console.log
+  for(let i of arr){
+    if(i.profession=='developer')console.log(i);
+}
 }
 
 function addData() {
-  //Write your code here, just console.log
+  arr.push({id:4,name:"susan",age:20,profession:"intern"});
+  consoleArr();
 }
 
 function removeAdmin() {
-  //Write your code here, just console.log
+  for(let i = 0;i<arr.length;i++){
+    if(arr[i].profession=='admin')arr.splice(i,1);
+}
+consoleArr();
 }
 
 function concatenateArray() {
-  //Write your code here, just console.log
+  arr = arr.concat(arr);
+  consoleArr();
 }
 
 // Here is an example of how functions work,
